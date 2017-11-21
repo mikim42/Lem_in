@@ -6,7 +6,7 @@
 /*   By: mikim <mikim@student.42.us.org>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/10/15 16:52:01 by mikim             #+#    #+#             */
-/*   Updated: 2017/11/19 23:16:13 by mikim            ###   ########.fr       */
+/*   Updated: 2017/11/21 14:11:46 by mikim            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,7 +107,7 @@ void	store_link(t_env *e, char **split)
 
 void	store_room(t_env *e, char **split)
 {
-	if (!split[1] || !split[2] !! split[3] || split[0][0] == 'L' || e->link ||
+	if (!split[1] || !split[2] || split[3] || split[0][0] == 'L' || e->link ||
 		(ft_strlen(split[1]) > 18 || ft_strchr(split[0], '-')) ||
 		(ft_strlen(split[2]) > 18))
 	{
